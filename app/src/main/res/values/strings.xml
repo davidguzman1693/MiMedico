@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MiMedico</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="medico_opcion1">PACIENTES</string>
+    <string name="medico_opcion2">TRATAMIENTOS</string>
+    <string-array name="tratas">
+        <item>Tratamiento 1</item>
+        <item>Tratamiento 2</item>
+        <item>Tratamiento 3</item>
+        <item>Tratamiento 4</item>
+        <item>Tratamiento 5</item>
+        <item>Tratamiento 6</item>
+    </string-array>
+</resources>
