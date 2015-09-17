@@ -1,7 +1,6 @@
 package aplimovil.david.mimedico;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
@@ -23,7 +22,7 @@ public class TrataActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.template_tratamientos);
-        list = (ListView) findViewById(R.id.list_tm);
+        /*list = (ListView) findViewById(R.id.list_tm);
 
 
         AppUtil.data = new ArrayList<>();
@@ -31,16 +30,17 @@ public class TrataActivity extends AppCompatActivity {
         list.setAdapter(adapter);
 
         registerForContextMenu(list);
-        loadData();
+        loadData();*/
 
     }
+
 
     @Override
     protected void onRestart() {
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
         super.onRestart();
     }
-
+/*
     private void loadData(){
         String tratamiento[] = getResources().getStringArray(R.array.tratas);
 
@@ -50,4 +50,5 @@ public class TrataActivity extends AppCompatActivity {
         }
         adapter.notifyDataSetChanged();
     }
+*/
 }

@@ -41,11 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
        switch (view.getId()){
            case R.id.img:
-               Toast.makeText(this, "Informacion del paciente", Toast.LENGTH_SHORT).show();
+               Intent intent1 = new Intent(this,TrataActivity.class);
+               startActivity(intent1);
+               //Toast.makeText(this, "Informacion del paciente", Toast.LENGTH_SHORT).show();
                break;
            case R.id.img1:
-               Intent intent1 = new Intent(this,TrataActivity.class);
-
+               Intent intent = new Intent(this,TrataActivity.class);
+               startActivity(intent);
                break;
 
        }

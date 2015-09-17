@@ -6,6 +6,13 @@ package aplimovil.david.mimedico.models;
 public class Tratamiento {
     String tratamiento;
 
+    public Tratamiento() {
+    }
+
+    public Tratamiento(String tratamiento) {
+        this.tratamiento = tratamiento;
+    }
+
     public String getTratamiento() {
         return tratamiento;
     }
@@ -14,10 +21,7 @@ public class Tratamiento {
         this.tratamiento = tratamiento;
     }
 
-    public Tratamiento(String tratamiento) {
-        this.tratamiento = tratamiento;
-    }
 
-    public Tratamiento() {
-    }
+
+
 }
