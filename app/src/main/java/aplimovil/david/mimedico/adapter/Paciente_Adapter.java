@@ -9,16 +9,16 @@ import android.widget.TextView;
 import java.util.List;
 
 import aplimovil.david.mimedico.R;
-import aplimovil.david.mimedico.models.Tratamiento;
+import aplimovil.david.mimedico.models.Paciente;
 
 /**
- * Created by david on 17/09/2015.
+ * Created by david on 21/09/2015.
  */
-public class Tratamiento_adapter extends BaseAdapter{
+public class Paciente_Adapter extends BaseAdapter{
     Context context;
-    List<Tratamiento> data;
+    List<Paciente> data;
 
-    public Tratamiento_adapter(Context context, List<Tratamiento> data) {
+    public Paciente_Adapter(Context context, List<Paciente> data) {
         this.context = context;
         this.data = data;
     }
@@ -49,13 +49,10 @@ public class Tratamiento_adapter extends BaseAdapter{
             v = convertView;
         }
 
-        Tratamiento p = (Tratamiento) getItem(position);
+        Paciente p = (Paciente) getItem(position);
         TextView txt = (TextView) v.findViewById(R.id.txt);
-        txt.setText(p.getTratamiento());
+        txt.setText(p.getPaciente());
 
         return v;
     }
-
-
-
 }

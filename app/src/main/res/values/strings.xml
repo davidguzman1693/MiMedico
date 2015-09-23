@@ -13,4 +13,20 @@
         <item>Tratamiento 5</item>
         <item>Tratamiento 6</item>
     </string-array>
+
+    <string-array name="pacientes">
+        <item>Paciente 1</item>
+        <item>Paciente 2</item>
+        <item>Paciente 3</item>
+        <item>Paciente 4</item>
+        <item>Paciente 5</item>
+        <item>Paciente 6</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_add">Agregar</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="nom_tratamiento">Nombre de tratamiento</string>
+    <string name="title_activity_paci">PaciActivity</string>
 </resources>

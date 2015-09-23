@@ -16,8 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TrataActivity"
-            android:label="tararas"></activity>
+        <activity
+            android:name=".TrataActivity"
+            android:label="tararas" />
+        <activity
+            android:name=".AddActivity"
+            android:label="Agregar" />
+        <activity
+            android:name=".PaciActivity"
+            android:label="@string/title_activity_paci" >
+        </activity>
     </application>
 
 </manifest>
