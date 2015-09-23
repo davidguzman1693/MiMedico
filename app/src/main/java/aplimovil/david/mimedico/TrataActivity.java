@@ -43,11 +43,19 @@ public class TrataActivity extends AppCompatActivity {
     }
 
     private void loadData(){
-        String tratamientos[] = getResources().getStringArray(R.array.tratas);
+        String tratamientos[] = getResources().getStringArray(R.array.tratas_commpleto);
 
         for(int i=0; i<tratamientos.length;i++){
-            Tratamiento p = new Tratamiento(tratamientos[i]);
-            AppUtil.data.add(p);
+            String tratamiento[] = tratamientos[i].split(",");
+            Tratamiento t = new Tratamiento();
+            t.setTratamiento(tratamiento[0]);
+            t.setFinaltratamiento(tratamiento[1]);
+            t.setCondicion(tratamiento[2]);
+            t.setHorario(tratamiento[3]);
+            t.setFechainicio(tratamiento[4]);
+            t.setFechafin(tratamiento[5]);
+            t.setControl(tratamiento[6]);
+            AppUtil.data.add(t);
         }
         adapter.notifyDataSetChanged();
     }

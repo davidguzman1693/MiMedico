@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:layout_gravity="center">
+    android:layout_height="match_parent"
+    >
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/item_lispa"
+                android:scaleType="centerCrop"
+                />
 
             <ImageView
                 android:id="@+id/ic_pac"
@@ -22,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nombre"
                 android:layout_toRightOf="@+id/ic_pac"
-                android:textColor="#000000"
+                android:textColor="#ffffff"
                 android:layout_alignBottom="@+id/ic_pac"
                 android:layout_marginTop="@dimen/padding_small"
                 android:layout_marginBottom="@dimen/padding_small"
@@ -43,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cedula"
+                android:textColor="#ffffff"
                 android:layout_toRightOf="@+id/ic_ced"
                 android:layout_alignBottom="@+id/ic_ced"
                 android:layout_marginTop="@dimen/padding_small"
@@ -66,6 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Correo"
+                android:textColor="#ffffff"
                 android:layout_toRightOf="@id/ic_corr"
                 android:layout_alignBottom="@id/ic_corr"
                 android:layout_marginBottom="@dimen/padding_small"

@@ -50,8 +50,14 @@ public class Tratamiento_adapter extends BaseAdapter{
         }
 
         Tratamiento p = (Tratamiento) getItem(position);
-        TextView txt = (TextView) v.findViewById(R.id.txt);
+        TextView txt = (TextView) v.findViewById(R.id.txt_nombreTrata);
         txt.setText(p.getTratamiento());
+
+        txt = (TextView) v.findViewById(R.id.txt_condTrata);
+        txt.setText(p.getCondicion());
+
+        txt = (TextView) v.findViewById(R.id.txt_control);
+        txt.setText(p.getControl());
 
         return v;
     }
