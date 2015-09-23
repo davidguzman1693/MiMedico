@@ -31,7 +31,7 @@ public class PaciActivity extends AppCompatActivity {
         adapter = new Paciente_Adapter(this,AppUtil.data1);
         list.setAdapter(adapter);
 
-        registerForContextMenu(list);
+
         loadData();
     }
 
@@ -42,10 +42,14 @@ public class PaciActivity extends AppCompatActivity {
     }
 
     private void loadData() {
-        String pacientes[] = getResources().getStringArray(R.array.pacientes);
+        String pacientes[] = getResources().getStringArray(R.array.pacientes_completo);
 
         for(int i=0; i<pacientes.length;i++){
-            Paciente p = new Paciente(pacientes[i]);
+            String paciente[] = pacientes[i].split(",");
+            Paciente p = new Paciente();
+            p.setPaciente(paciente[0]);
+            p.setCedula(paciente[1]);
+            p.setCorreo(paciente[2]);
             AppUtil.data1.add(p);
         }
         adapter.notifyDataSetChanged();

@@ -39,19 +39,25 @@ public class Paciente_Adapter extends BaseAdapter{
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int i, View convertView, ViewGroup parent) {
         View v = null;
 
         if (convertView == null){
 
-            v = View.inflate(context, R.layout.template_tratamiento,null);
+            v = View.inflate(context, R.layout.template_pacientes,null);
         }else{
             v = convertView;
         }
 
-        Paciente p = (Paciente) getItem(position);
-        TextView txt = (TextView) v.findViewById(R.id.txt);
+        Paciente p = (Paciente) getItem(i);
+        TextView txt = (TextView) v.findViewById(R.id.nombrePa);
         txt.setText(p.getPaciente());
+
+        txt = (TextView) v.findViewById(R.id.txt_ced);
+        txt.setText(p.getCedula());
+
+        txt = (TextView) v.findViewById(R.id.txt_correo);
+        txt.setText(p.getCorreo());
 
         return v;
     }

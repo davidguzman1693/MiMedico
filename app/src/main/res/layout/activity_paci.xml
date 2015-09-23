@@ -21,6 +21,6 @@
         android:id="@+id/list_pa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/pacientes" android:layout_gravity="center"/>
+        android:layout_gravity="center"/>
 
 </LinearLayout>
