@@ -7,7 +7,7 @@ public class Tratamiento {
     String tratamiento,finaltratamiento,fechainicio,fechafin,horario,condicion,control;
     Paciente paciente;
 
-    public Tratamiento(String tratamiento, String finaltratamiento, String fechainicio, String fechafin, String horario, String condicion, String control, Paciente paciente) {
+    public Tratamiento(String tratamiento, String finaltratamiento, String fechainicio, String fechafin, String horario, String condicion, String control) {
         this.tratamiento = tratamiento;
         this.finaltratamiento = finaltratamiento;
         this.fechainicio = fechainicio;
@@ -15,7 +15,7 @@ public class Tratamiento {
         this.horario = horario;
         this.condicion = condicion;
         this.control = control;
-        this.paciente = paciente;
+
     }
 
     public Tratamiento() {

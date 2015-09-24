@@ -47,4 +47,9 @@
     <string name="title_activity_add">AddActivity</string>
     <string name="nom_tratamiento">Nombre de tratamiento</string>
     <string name="title_activity_paci">PaciActivity</string>
+    <string name="title_add">Agregar</string>
+    <string name="txt_nom_pa">Nombre paciente</string>
+    <string name="pac_ced">Cedula</string>
+    <string name="txt_mail_pa">Correo</string>
+    <string name="title_activity_add_tra">AddTraActivity</string>
 </resources>

@@ -18,13 +18,17 @@
         </activity>
         <activity
             android:name=".TrataActivity"
-            android:label="tararas" />
+            android:label="Tratamientos" />
         <activity
             android:name=".AddActivity"
-            android:label="Agregar" />
+            android:label="Agregar Paciente" />
         <activity
             android:name=".PaciActivity"
-            android:label="@string/title_activity_paci" >
+            android:label="Pacientes" >
+        </activity>
+        <activity
+            android:name=".AddTraActivity"
+            android:label="Agregar Tratamiento" >
         </activity>
     </application>
 
