@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="aplimovil.david.mimedico.LoginActivity">
+    <item
+        android:id="@+id/action_other"
+        android:title="@string/menu_others"
+        android:icon="@android:drawable/ic_menu_more"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_logout1"
+                android:title="@string/menu_logout"
+                android:icon="@mipmap/ic_logout"/>
+        </menu>
+
+    </item>
+</menu>

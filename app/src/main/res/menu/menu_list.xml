@@ -5,6 +5,10 @@
         android:icon="@mipmap/ic_edit"
         android:id="@+id/acction_edit"
         />
+    <item android:id="@+id/action_add_pac_tra"
+        android:title="@string/asociar"
+        android:icon="@mipmap/ic_add_pac_tra"
+        />
     <item
         android:title="Eliminar"
         android:icon="@mipmap/ic_delete"

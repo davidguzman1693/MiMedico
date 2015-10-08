@@ -7,9 +7,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="DATABASE"
+            android:value="s_ts.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="aplimovil.david.mimedico" />
+
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".RootActivity"
+            android:label="TreatSelf" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,17 +31,33 @@
         </activity>
         <activity
             android:name=".TrataActivity"
-            android:label="Tratamientos" />
+            />
         <activity
             android:name=".AddActivity"
             android:label="Agregar Paciente" />
         <activity
             android:name=".PaciActivity"
-            android:label="Pacientes" >
+             >
         </activity>
         <activity
             android:name=".AddTraActivity"
             android:label="Agregar Tratamiento" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="TreatSelf" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            >
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            >
+        </activity>
+        <activity
+            android:name=".PacTraActivity"
+            android:label="Asociar tratamiento" >
         </activity>
     </application>
 

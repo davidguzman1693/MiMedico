@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
+import aplimovil.david.mimedico.database.TratamientoDAO;
 import aplimovil.david.mimedico.models.Tratamiento;
 import aplimovil.david.mimedico.util.AppUtil;
 
@@ -17,11 +20,15 @@ public class AddTraActivity extends AppCompatActivity implements View.OnClickLis
     TextView nomtra,fin,cond,fechaini,fechafin,hora,control;
     int pos = -1;
     Tratamiento tratami;
+    TratamientoDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_tra);
+
+        dao = new TratamientoDAO(this);
+
         btn = (Button) findViewById(R.id.btn_add_trata);
 
         nomtra = (TextView) findViewById(R.id.txt_nom_tra);
@@ -67,6 +74,9 @@ public class AddTraActivity extends AppCompatActivity implements View.OnClickLis
 
         if(pos==-1) {
             Tratamiento p = new Tratamiento(trata,fina,fini,ffin,hor,condi,cont);
+            //AppUtil.data.add(p);
+            //Tratamiento.ingresarTrata(this,p);
+            dao.insertTratamiento(p);
             AppUtil.data.add(p);
         }else{
 
@@ -77,6 +87,9 @@ public class AddTraActivity extends AppCompatActivity implements View.OnClickLis
             tratami.setFechafin(ffin);
             tratami.setHorario(hor);
             tratami.setControl(cont);
+            dao.updateTratamiento(tratami);
+            AppUtil.data = new ArrayList<>();
+            AppUtil.data.addAll(dao.getAllTratamiento());
         }
 
         finish();

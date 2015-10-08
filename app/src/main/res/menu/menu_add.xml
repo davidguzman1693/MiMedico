@@ -3,7 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".PaciActivity">
     <item android:id="@+id/action_add" android:title="@string/title_add"
-        android:orderInCategory="100" app:showAsAction="always"
+        app:showAsAction="always"
         android:icon="@mipmap/ic_add"
         />
+
+    <item
+        android:id="@+id/action_other"
+        android:title="@string/menu_others"
+        android:icon="@android:drawable/ic_menu_more"
+        app:showAsAction="always">
+    <menu>
+        <item
+            android:id="@+id/action_logout"
+            android:title="@string/menu_logout"
+            android:icon="@mipmap/ic_logout"/>
+    </menu>
+    </item>
+
 </menu>

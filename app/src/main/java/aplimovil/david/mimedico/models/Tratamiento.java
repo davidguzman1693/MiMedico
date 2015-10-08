@@ -1,11 +1,20 @@
 package aplimovil.david.mimedico.models;
 
+import android.content.Context;
+import android.util.Log;
+
+import com.orm.SugarContext;
+import com.orm.SugarRecord;
+
+import java.util.List;
+
 /**
  * Created by david on 17/09/2015.
  */
-public class Tratamiento {
+public class Tratamiento{
     String tratamiento,finaltratamiento,fechainicio,fechafin,horario,condicion,control;
     Paciente paciente;
+    long id;
 
     public Tratamiento(String tratamiento, String finaltratamiento, String fechainicio, String fechafin, String horario, String condicion, String control) {
         this.tratamiento = tratamiento;
@@ -19,6 +28,15 @@ public class Tratamiento {
     }
 
     public Tratamiento() {
+    }
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getTratamiento() {
@@ -84,4 +102,30 @@ public class Tratamiento {
     public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
     }
+
+    //region A base de datos
+    /*
+    public static void ingresarTrata(Context context,Tratamiento t){
+        SugarContext.init(context);
+        if(count(Tratamiento.class)==0) {
+            t.save();
+        }
+        listarTrata();
+    }
+
+    public static void listarTrata(){
+        List<Tratamiento> data = findWithQuery(Tratamiento.class
+                , "SELECT * FROM Tratamiento", null);
+
+        for(int i = 0; i<data.size();i++){
+            Log.i("Planeta", "-----------------");
+            Log.i("Planeta","ID:"+data.get(i).getId());
+            Log.i("Planeta","NOMBRE:"+data.get(i).getTratamiento());
+            Log.i("Planeta","GRAVEDAD:"+data.get(i).getControl());
+            Log.i("Planeta","TAMANIO"+data.get(i).getFechafin());
+        }
+
+    }
+    */
+    //endregion
 }
