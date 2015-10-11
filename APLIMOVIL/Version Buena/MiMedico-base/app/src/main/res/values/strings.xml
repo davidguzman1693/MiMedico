@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">MiMedico</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="medico_opcion1">PACIENTES</string>
+    <string name="medico_opcion2">TRATAMIENTOS</string>
+
+    <string-array name="tratas">
+        <item>Tratamiento 1</item>
+        <item>Tratamiento 2</item>
+        <item>Tratamiento 3</item>
+        <item>Tratamiento 4</item>
+        <item>Tratamiento 5</item>
+        <item>Tratamiento 6</item>
+    </string-array>
+
+    <string-array name="tratas_commpleto">
+        <item>Tratamiento 1,Fin1,Condicion1,Horario1, FechaInicio1, FechaFInal1, FechaControl1</item>
+        <item>Tratamiento 2,Fin2,Condicion2,Horario2, FechaInicio2, FechaFInal2, FechaControl2</item>
+        <item>Tratamiento 3,Fin3,Condicion3,Horario3, FechaInicio3, FechaFInal3, FechaControl3</item>
+        <item>Tratamiento 4,Fin1,Condicion4,Horario4, FechaInicio4, FechaFInal4, FechaControl4</item>
+        <item>Tratamiento 5,Fin1,Condicion5,Horario5, FechaInicio5, FechaFInal5, FechaControl5</item>
+        <item>Tratamiento 6,Fin1,Condicion6,Horario6, FechaInicio6, FechaFInal6, FechaControl6</item>
+    </string-array>
+
+    <string-array name="pacientes">
+        <item>Paciente 1</item>
+        <item>Paciente 2</item>
+        <item>Paciente 3</item>
+        <item>Paciente 4</item>
+        <item>Paciente 5</item>
+        <item>Paciente 6</item>
+    </string-array>
+
+    <string-array name="pacientes_completo">
+        <item>Paciente 1,Cedula1,Correo1</item>
+        <item>Paciente 2,Cedula2,Correo3</item>
+        <item>Paciente 3,Cedula3,Correo3</item>
+        <item>Paciente 4,Cedula4,Correo4</item>
+        <item>Paciente 5,Cedula5,Correo5</item>
+        <item>Paciente 6,Cedula6,Correo6</item>
+    </string-array>
+
+    <string-array name="perfil">
+        <item>Medico</item>
+        <item>Paciente</item>
+    </string-array>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_add">Agregar</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="nom_tratamiento">Nombre de tratamiento</string>
+    <string name="title_activity_paci">PaciActivity</string>
+    <string name="title_add">Agregar</string>
+    <string name="txt_nom_pa">Nombre paciente</string>
+    <string name="pac_ced">Cedula</string>
+    <string name="txt_mail_pa">Correo</string>
+    <string name="title_activity_add_tra">AddTraActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="txt_login">Inicia sesión</string>
+    <string name="txt_user">Usuario</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="btn_login">Entrar</string>
+    <string name="menu_others">Otros</string>
+    <string name="menu_logout">Cerrar Sesion</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_pac_tra">PacTraActivity</string>
+    <string name="asociar">Asociar Tratamiento</string>
+    <string name="singup">Registrarse</string>
+    <string name="txt_registr">Registrate</string>
+</resources>

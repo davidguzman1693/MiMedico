@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="left"
+    tools:context="aplimovil.david.mimedico.AddActivity">
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        >
+
+    <ImageView
+        android:id="@+id/ic_trata"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_trata"
+        android:layout_margin="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        />
+    <EditText
+        android:id="@+id/txt_nom_pa"
+        android:hint="@string/txt_nom_pa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_toRightOf="@+id/ic_trata"
+
+        android:layout_marginTop="@dimen/padding_small"/>
+    <ImageView
+        android:id="@+id/ic_condTra"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_cond"
+        android:layout_below="@id/ic_trata"
+        android:layout_margin="@dimen/padding_small"
+        />
+    <EditText
+        android:id="@+id/txt_ced_pa"
+        android:hint="@string/pac_ced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_toRightOf="@+id/ic_condTra"
+        android:layout_alignBottom="@+id/ic_condTra"
+        android:layout_marginTop="@dimen/padding_small"/>
+    <ImageView
+        android:id="@+id/ic_control"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_control"
+        android:layout_below="@+id/ic_condTra"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        />
+    <EditText
+        android:id="@+id/txt_mail_pa"
+        android:hint="@string/txt_mail_pa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ic_control"
+        android:layout_alignBottom="@id/ic_control"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        />
+    </RelativeLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add"/>-->
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/medico_opcion1"
+        android:gravity="center"
+        android:background="@drawable/item_lore"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center">
+
+
+        <ListView
+            android:id="@+id/list_paci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

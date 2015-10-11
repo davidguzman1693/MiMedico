@@ -1,0 +1,141 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=28260, tid=7200
+#
+# JRE version:  (7.0_79-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000283d800):  JavaThread "Unknown thread" [_thread_in_vm, id=7200, stack(0x00000000026a0000,0x00000000027a0000)]
+
+Stack: [0x00000000026a0000,0x00000000027a0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000283d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7200, stack(0x00000000026a0000,0x00000000027a0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 28160K, used 491K [0x00000000eaa80000, 0x00000000ec980000, 0x0000000100000000)
+  eden space 24576K, 2% used [0x00000000eaa80000,0x00000000eaafae68,0x00000000ec280000)
+  from space 3584K, 0% used [0x00000000ec600000,0x00000000ec600000,0x00000000ec980000)
+  to   space 3584K, 0% used [0x00000000ec280000,0x00000000ec280000,0x00000000ec600000)
+ ParOldGen       total 62976K, used 0K [0x00000000c0000000, 0x00000000c3d80000, 0x00000000eaa80000)
+  object space 62976K, 0% used [0x00000000c0000000,0x00000000c0000000,0x00000000c3d80000)
+ PSPermGen       total 21504K, used 697K [0x00000000bae00000, 0x00000000bc300000, 0x00000000c0000000)
+  object space 21504K, 3% used [0x00000000bae00000,0x00000000baeae588,0x00000000bc300000)
+
+Card table byte_map: [0x0000000005a00000,0x0000000005c30000] byte_map_base: 0x0000000005429000
+
+Polling page: 0x0000000002600000
+
+Code Cache  [0x0000000002940000, 0x0000000002bb0000, 0x0000000005940000)
+ total_blobs=37 nmethods=0 adapters=20 free_code_cache=48890Kb largest_free_block=50063104
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.040 loading class 0x0000000002886fa0
+Event: 0.040 loading class 0x0000000002886fa0 done
+Event: 0.040 loading class 0x0000000002886ff0
+Event: 0.041 loading class 0x0000000002886ff0 done
+Event: 0.041 loading class 0x0000000002887040
+Event: 0.041 loading class 0x0000000002887040 done
+Event: 0.042 loading class 0x0000000002887dc0
+Event: 0.042 loading class 0x0000000002887dc0 done
+Event: 0.042 loading class 0x00000000028879e0
+Event: 0.042 loading class 0x00000000028879e0 done
+
+
+Dynamic libraries:
+0x00007ff640ec0000 - 0x00007ff640ef3000 	C:\Program Files\Java\jdk1.7.0_79\bin\java.exe
+0x00007fffd6600000 - 0x00007fffd67c1000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007fffd5720000 - 0x00007fffd57cd000 	C:\Windows\system32\KERNEL32.DLL
+0x00007fffd3af0000 - 0x00007fffd3ccd000 	C:\Windows\system32\KERNELBASE.dll
+0x00007fffd5a00000 - 0x00007fffd5aa6000 	C:\Windows\system32\ADVAPI32.dll
+0x00007fffd53c0000 - 0x00007fffd545d000 	C:\Windows\system32\msvcrt.dll
+0x00007fffd5b10000 - 0x00007fffd5b6b000 	C:\Windows\system32\sechost.dll
+0x00007fffd5d20000 - 0x00007fffd5e46000 	C:\Windows\system32\RPCRT4.dll
+0x00007fffd5270000 - 0x00007fffd53be000 	C:\Windows\system32\USER32.dll
+0x00007fffd5460000 - 0x00007fffd55e6000 	C:\Windows\system32\GDI32.dll
+0x00007fffce9f0000 - 0x00007fffcec64000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10240.16384_none_f41f7b285750ef43\COMCTL32.dll
+0x00007fffd57d0000 - 0x00007fffd5806000 	C:\Windows\system32\IMM32.DLL
+0x00007fffd64a0000 - 0x00007fffd65fc000 	C:\Windows\system32\MSCTF.dll
+0x000000005b5b0000 - 0x000000005b682000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\msvcr100.dll
+0x000000005bb50000 - 0x000000005c325000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\server\jvm.dll
+0x00007fffd59f0000 - 0x00007fffd59f8000 	C:\Windows\system32\PSAPI.DLL
+0x00007fffcf0a0000 - 0x00007fffcf0a9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007fffd0e40000 - 0x00007fffd0e63000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007fffd56b0000 - 0x00007fffd5719000 	C:\Windows\system32\WS2_32.dll
+0x00007fffd63d0000 - 0x00007fffd63d8000 	C:\Windows\system32\NSI.dll
+0x00007fffd0a20000 - 0x00007fffd0a4c000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007fffd39e0000 - 0x00007fffd3a24000 	C:\Windows\system32\cfgmgr32.dll
+0x00007fffd19a0000 - 0x00007fffd19c7000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x000000005bb40000 - 0x000000005bb4f000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\verify.dll
+0x000000005bb10000 - 0x000000005bb38000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\java.dll
+0x000000005baf0000 - 0x000000005bb05000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Xmx1024M -Dfile.encoding=windows-1252 -Duser.country=CO -Duser.language=es -Duser.variant 
+java_command: com.android.dx.command.Main --dex --num-threads=4 --output E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\dex\debug E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\classes\debug E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-33a0124652e42acc68be064714461971d0c068c4.jar E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\pre-dexed\debug\classes-4b6542bc89dc62348e09b272723a1eb1fb53068c.jar E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-56a206f670342cbe7e26f155978d8d9c8785482e.jar E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\pre-dexed\debug\classes-c3a0b1817a80e006f5987beb3ff87766624ba41c.jar E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\pre-dexed\debug\classes-fbc7eefea49865fc9cd68179123611f5fed5e43b.jar E:\David Guzman\Documents\Universidad del Cauca\SEMESTRE X\APLIMOVIL\Version Buena\MiMedico-base\app\build\intermediates\pre-dexed\debug\guava-18.0-caeba3d0cb40a156d8cdeeeaf4ee91ad9d5292db.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_79
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Users\david\AppData\Local\atom\bin
+USERNAME=david
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 6084460k(428952k free), swap 24958828k(5864k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.79-b02) for windows-amd64 JRE (1.7.0_79-b15), built on Apr 10 2015 12:36:16 by "java_re" with unknown MS VC++:1600
+
+time: Sat Oct 10 10:26:54 2015
+elapsed time: 0 seconds
+

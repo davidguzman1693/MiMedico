@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aplimovil.david.mimedico" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+       <activity
+            android:name=".RootActivity"
+            android:label="TreatSelf" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrataActivity"
+            />
+        <activity
+            android:name=".AddActivity"
+            android:label="Agregar Paciente" />
+        <activity
+            android:name=".PaciActivity"
+             >
+        </activity>
+        <activity
+            android:name=".AddTraActivity"
+            android:label="Agregar Tratamiento" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="TreatSelf" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            >
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            >
+        </activity>
+        <activity
+            android:name=".PacTraActivity"
+            android:label="Asociar tratamiento" >
+        </activity>
+    </application>
+
+</manifest>
